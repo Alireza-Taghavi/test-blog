@@ -9,6 +9,7 @@ import Image from '@/components/Image'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
 import ScrollTopAndComment from '@/components/ScrollTopAndComment'
+import Canvas from '@/components/Canvas'
 
 const editUrl = (path) => `${siteMetadata.siteRepo}/blob/main/data/${path}`
 const discussUrl = (path) =>
@@ -149,6 +150,12 @@ export default function PostLayout({ content, authorDetails, next, prev, childre
                     )}
                   </div>
                 )}
+              </div>
+              <div className="w-full">
+                <h2 className="mb-1 text-xs uppercase tracking-wide text-gray-500 dark:text-gray-400">
+                  Your Comment
+                </h2>
+                <Canvas />
               </div>
               <div className="pt-4 xl:pt-8">
                 <Link
