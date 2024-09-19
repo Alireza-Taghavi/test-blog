@@ -20,7 +20,6 @@ const useDrawingStore = create<DrawingState>(
     }),
     {
       name: 'drawing-storage',
-      getStorage: () => localStorage,
     }
   )
 )
